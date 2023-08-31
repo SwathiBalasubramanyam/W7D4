@@ -6,6 +6,7 @@
 	align-items: center;
 	border-bottom: 2px solid black;
 	position: relative;
+	margin-top: 20px;
 }
 
 .language-nav {
@@ -26,9 +27,15 @@
 		color: $dark-gray;
 	}
 
+
 	ul {
 		display: flex;
 	}
+
+}
+
+.language-nav li:first-child {
+	font-weight: 900;
 }
 
 .logo {
@@ -37,15 +44,22 @@
 }
 
 .masthead-links {
-	display: flex;
 	font-family: $sans-serif;
 	font-size: 11px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	// display: flex;
+	// flex-direction: row;
+	// align-items: center;
+
+	ul {
+		display: flex;
+	}
+
 
 	li {
 		margin-left: 10px;
-		border-right: 1px solid $light-gray;
+		// border-right: 1px solid $light-gray;
 	}
 
 	button {
@@ -61,7 +75,7 @@
 	}
 
 	a,
-	button, 
+	button,
 	time {
 		margin-right: 10px;
 	}
