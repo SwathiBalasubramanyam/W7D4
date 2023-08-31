@@ -1,7 +1,7 @@
 <header class="main-nav">
 	<nav class="left-nav">
 		<ul>
-      <li data-controller="sections-sidebar"> 
+      <li data-controller="sections-sidebar">
         <div id="sections-sidebar-btn" data-action="click->sections-sidebar#toggleSidebar">
           <i class="fa-solid fa-bars"></i>
           <span>sections</span>
@@ -15,4 +15,23 @@
 			</li>
 		</ul>
 	</nav>
+
+  <nav class="right-nav">
+		<ul>
+      <li data-controller="subscribe-nav"><%=  %>
+        <div id="subscribe-nav-btn" data-action="click->subscribe-nav#toggleSidebar">
+          <button type="button">subscribe now</button>
+        </div>
+      </li>
+			<li data-controller="login-nav">
+        <div id="login-nav-btn" data-action="click->login-nav#toggleModal">
+          <button type="button">log in</button>
+        </div>
+			</li>
+      <li class="gear-icon">
+        <i class="fa-solid fa-gear"></i>
+      </li>
+		</ul>
+	</nav>
+
 </header>
